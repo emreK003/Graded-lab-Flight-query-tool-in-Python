@@ -1,0 +1,4 @@
+flight_id,origin,destination,departure_datetime,arrival_datetime,price
+F10A,RIX,HEL,2026-03-01 08:00,2026-03-01 09:30,95
+F10A,RIX,HEL,2026-03-02 08:00,2026-03-02 09:30,95
+FA1,RIX,rix,2026-03-02 08:00,2026-03-02 09:30,95

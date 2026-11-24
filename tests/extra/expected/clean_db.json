@@ -1,0 +1,18 @@
+[
+  {
+    "flight_id": "CL1",
+    "origin": "RIX",
+    "destination": "HEL",
+    "departure_datetime": "2026-04-01 08:00",
+    "arrival_datetime": "2026-04-01 09:00",
+    "price": 70.0
+  },
+  {
+    "flight_id": "CL2",
+    "origin": "HEL",
+    "destination": "RIX",
+    "departure_datetime": "2026-04-01 18:00",
+    "arrival_datetime": "2026-04-01 19:00",
+    "price": 75.0
+  }
+]

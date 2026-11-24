@@ -1,0 +1,1211 @@
+[
+  {
+    "line": 3,
+    "fields": [
+      "EV100",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": null
+  },
+  {
+    "line": 4,
+    "fields": [
+      "  EV101 ",
+      "\tRIX\t",
+      " TLL ",
+      "  2026-01-10 09:00 ",
+      "2026-01-10 09:45  ",
+      "  55.5  "
+    ],
+    "expect": null
+  },
+  {
+    "line": 5,
+    "fields": [
+      "A1",
+      "RIX",
+      "VNO",
+      "2026-01-10 10:00",
+      "2026-01-10 11:00",
+      "1e2"
+    ],
+    "expect": null
+  },
+  {
+    "line": 6,
+    "fields": [
+      "ABCDEFGH",
+      "VNO",
+      "RIX",
+      "2026-01-10 12:00",
+      "2026-01-10 13:00",
+      "+50"
+    ],
+    "expect": null
+  },
+  {
+    "line": 7,
+    "fields": [
+      "ev102",
+      "HEL",
+      "RIX",
+      "2026-01-10 23:30",
+      "2026-01-11 00:20",
+      ".5"
+    ],
+    "expect": null
+  },
+  {
+    "line": 8,
+    "fields": [
+      "EV103",
+      "LHR",
+      "JFK",
+      "2028-02-29 10:00",
+      "2028-02-29 12:00",
+      "5."
+    ],
+    "expect": null
+  },
+  {
+    "line": 9,
+    "fields": [
+      "EV104",
+      "CPH",
+      "IST",
+      "2026-01-11 00:00",
+      "2026-01-11 23:59",
+      "1_000"
+    ],
+    "expect": null
+  },
+  {
+    "line": 10,
+    "fields": [
+      "EV105",
+      "RIX",
+      "HEL",
+      "2026-12-31 23:59",
+      "2027-01-01 00:00",
+      "0.01"
+    ],
+    "expect": null
+  },
+  {
+    "line": 11,
+    "fields": [
+      "EV100",
+      "RIX",
+      "HEL",
+      "2026-01-11 08:00",
+      "2026-01-11 09:00",
+      "120"
+    ],
+    "expect": null
+  },
+  {
+    "line": 12,
+    "fields": [
+      "EV106",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": null
+  },
+  {
+    "line": 18,
+    "fields": [
+      "garbage"
+    ],
+    "expect": "WRONG_FIELD_COUNT"
+  },
+  {
+    "line": 19,
+    "fields": [
+      "EV200",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00"
+    ],
+    "expect": "WRONG_FIELD_COUNT"
+  },
+  {
+    "line": 20,
+    "fields": [
+      "EV201",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120",
+      ""
+    ],
+    "expect": "WRONG_FIELD_COUNT"
+  },
+  {
+    "line": 21,
+    "fields": [
+      "EV202",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "1",
+      "200"
+    ],
+    "expect": "WRONG_FIELD_COUNT"
+  },
+  {
+    "line": 22,
+    "fields": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "expect": "WRONG_FIELD_COUNT"
+  },
+  {
+    "line": 24,
+    "fields": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "expect": "MISSING_FIELD"
+  },
+  {
+    "line": 25,
+    "fields": [
+      "",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "MISSING_FIELD"
+  },
+  {
+    "line": 26,
+    "fields": [
+      "EV210",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "   "
+    ],
+    "expect": "MISSING_FIELD"
+  },
+  {
+    "line": 27,
+    "fields": [
+      "EV_211",
+      "",
+      "HEL",
+      "bad",
+      "bad",
+      "-1"
+    ],
+    "expect": "MISSING_FIELD"
+  },
+  {
+    "line": 28,
+    "fields": [
+      "EV212",
+      "RIX",
+      "HEL",
+      "  ",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "MISSING_FIELD"
+  },
+  {
+    "line": 30,
+    "fields": [
+      "X",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_FLIGHT_ID"
+  },
+  {
+    "line": 31,
+    "fields": [
+      "ABCDEFGHI",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_FLIGHT_ID"
+  },
+  {
+    "line": 32,
+    "fields": [
+      "EV-213",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_FLIGHT_ID"
+  },
+  {
+    "line": 33,
+    "fields": [
+      "EV 214",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_FLIGHT_ID"
+  },
+  {
+    "line": 34,
+    "fields": [
+      "ÄB215",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_FLIGHT_ID"
+  },
+  {
+    "line": 35,
+    "fields": [
+      "EV２１６",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_FLIGHT_ID"
+  },
+  {
+    "line": 36,
+    "fields": [
+      "EV2,17",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_FLIGHT_ID"
+  },
+  {
+    "line": 37,
+    "fields": [
+      "EV_218",
+      "ZZZ",
+      "ZZZ",
+      "bad",
+      "bad",
+      "abc"
+    ],
+    "expect": "INVALID_FLIGHT_ID"
+  },
+  {
+    "line": 39,
+    "fields": [
+      "EV220",
+      "rix",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_ORIGIN"
+  },
+  {
+    "line": 40,
+    "fields": [
+      "EV221",
+      "Rix",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_ORIGIN"
+  },
+  {
+    "line": 41,
+    "fields": [
+      "EV222",
+      "ZZZ",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_ORIGIN"
+  },
+  {
+    "line": 42,
+    "fields": [
+      "EV223",
+      "abc",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_ORIGIN"
+  },
+  {
+    "line": 43,
+    "fields": [
+      "EV224",
+      "XY",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_ORIGIN"
+  },
+  {
+    "line": 44,
+    "fields": [
+      "EV225",
+      "ABCD",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_ORIGIN"
+  },
+  {
+    "line": 45,
+    "fields": [
+      "EV226",
+      "ÅRN",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_ORIGIN"
+  },
+  {
+    "line": 46,
+    "fields": [
+      "EV227",
+      "ZZZ",
+      "ZZZ",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_ORIGIN"
+  },
+  {
+    "line": 47,
+    "fields": [
+      "EV228",
+      "R1X",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_ORIGIN"
+  },
+  {
+    "line": 48,
+    "fields": [
+      "EV229",
+      "QQQ",
+      "ZZZ",
+      "bad",
+      "bad",
+      "0"
+    ],
+    "expect": "INVALID_ORIGIN"
+  },
+  {
+    "line": 50,
+    "fields": [
+      "EV230",
+      "RIX",
+      "hel",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_DESTINATION"
+  },
+  {
+    "line": 51,
+    "fields": [
+      "EV231",
+      "RIX",
+      "ZZZ",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_DESTINATION"
+  },
+  {
+    "line": 52,
+    "fields": [
+      "EV232",
+      "RIX",
+      "XY",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_DESTINATION"
+  },
+  {
+    "line": 53,
+    "fields": [
+      "EV233",
+      "RIX",
+      "ÅRN",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_DESTINATION"
+  },
+  {
+    "line": 54,
+    "fields": [
+      "EV234",
+      "RIX",
+      "LONX",
+      "bad",
+      "bad",
+      "abc"
+    ],
+    "expect": "INVALID_DESTINATION"
+  },
+  {
+    "line": 56,
+    "fields": [
+      "EV240",
+      "RIX",
+      "RIX",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "SAME_ORIGIN_DESTINATION"
+  },
+  {
+    "line": 57,
+    "fields": [
+      "EV241",
+      " HEL ",
+      "HEL\t",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "SAME_ORIGIN_DESTINATION"
+  },
+  {
+    "line": 58,
+    "fields": [
+      "EV242",
+      "TLL",
+      "TLL",
+      "bad",
+      "bad",
+      "abc"
+    ],
+    "expect": "SAME_ORIGIN_DESTINATION"
+  },
+  {
+    "line": 60,
+    "fields": [
+      "EV250",
+      "RIX",
+      "HEL",
+      "2026-02-29 08:00",
+      "2026-03-01 09:00",
+      "120"
+    ],
+    "expect": "INVALID_DEPARTURE"
+  },
+  {
+    "line": 61,
+    "fields": [
+      "EV251",
+      "RIX",
+      "HEL",
+      "2026-01-10 8:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_DEPARTURE"
+  },
+  {
+    "line": 62,
+    "fields": [
+      "EV252",
+      "RIX",
+      "HEL",
+      "2026-1-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_DEPARTURE"
+  },
+  {
+    "line": 63,
+    "fields": [
+      "EV253",
+      "RIX",
+      "HEL",
+      "2026-01-10T08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_DEPARTURE"
+  },
+  {
+    "line": 64,
+    "fields": [
+      "EV254",
+      "RIX",
+      "HEL",
+      "2026-01-10  08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_DEPARTURE"
+  },
+  {
+    "line": 65,
+    "fields": [
+      "EV255",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_DEPARTURE"
+  },
+  {
+    "line": 66,
+    "fields": [
+      "EV256",
+      "RIX",
+      "HEL",
+      "2026/01/10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_DEPARTURE"
+  },
+  {
+    "line": 67,
+    "fields": [
+      "EV257",
+      "RIX",
+      "HEL",
+      "10-01-2026 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_DEPARTURE"
+  },
+  {
+    "line": 68,
+    "fields": [
+      "EV258",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:60",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_DEPARTURE"
+  },
+  {
+    "line": 69,
+    "fields": [
+      "EV259",
+      "RIX",
+      "HEL",
+      "2026-00-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_DEPARTURE"
+  },
+  {
+    "line": 70,
+    "fields": [
+      "EV260",
+      "RIX",
+      "HEL",
+      "0000-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_DEPARTURE"
+  },
+  {
+    "line": 71,
+    "fields": [
+      "EV261",
+      "RIX",
+      "HEL",
+      "２０２６-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_DEPARTURE"
+  },
+  {
+    "line": 72,
+    "fields": [
+      "EV262",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_DEPARTURE"
+  },
+  {
+    "line": 73,
+    "fields": [
+      "EV263",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00 AM",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_DEPARTURE"
+  },
+  {
+    "line": 74,
+    "fields": [
+      "EV264",
+      "RIX",
+      "HEL",
+      "2026-01-1008:00",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": "INVALID_DEPARTURE"
+  },
+  {
+    "line": 75,
+    "fields": [
+      "EV265",
+      "RIX",
+      "HEL",
+      "bad",
+      "bad",
+      "abc"
+    ],
+    "expect": "INVALID_DEPARTURE"
+  },
+  {
+    "line": 77,
+    "fields": [
+      "EV270",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 24:00",
+      "120"
+    ],
+    "expect": "INVALID_ARRIVAL"
+  },
+  {
+    "line": 78,
+    "fields": [
+      "EV271",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-04-31 10:00",
+      "120"
+    ],
+    "expect": "INVALID_ARRIVAL"
+  },
+  {
+    "line": 79,
+    "fields": [
+      "EV272",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 9:00",
+      "120"
+    ],
+    "expect": "INVALID_ARRIVAL"
+  },
+  {
+    "line": 80,
+    "fields": [
+      "EV273",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 10:00:00",
+      "120"
+    ],
+    "expect": "INVALID_ARRIVAL"
+  },
+  {
+    "line": 81,
+    "fields": [
+      "EV274",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "２０２６-01-10 10:00",
+      "120"
+    ],
+    "expect": "INVALID_ARRIVAL"
+  },
+  {
+    "line": 82,
+    "fields": [
+      "EV275",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "bad",
+      "-1"
+    ],
+    "expect": "INVALID_ARRIVAL"
+  },
+  {
+    "line": 84,
+    "fields": [
+      "EV280",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 08:00",
+      "120"
+    ],
+    "expect": "ARRIVAL_NOT_AFTER_DEPARTURE"
+  },
+  {
+    "line": 85,
+    "fields": [
+      "EV281",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 07:59",
+      "120"
+    ],
+    "expect": "ARRIVAL_NOT_AFTER_DEPARTURE"
+  },
+  {
+    "line": 86,
+    "fields": [
+      "EV282",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2025-12-31 23:59",
+      "120"
+    ],
+    "expect": "ARRIVAL_NOT_AFTER_DEPARTURE"
+  },
+  {
+    "line": 87,
+    "fields": [
+      "EV283",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-09 09:00",
+      "abc"
+    ],
+    "expect": "ARRIVAL_NOT_AFTER_DEPARTURE"
+  },
+  {
+    "line": 89,
+    "fields": [
+      "EV290",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "abc"
+    ],
+    "expect": "INVALID_PRICE"
+  },
+  {
+    "line": 90,
+    "fields": [
+      "EV291",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "nan"
+    ],
+    "expect": "INVALID_PRICE"
+  },
+  {
+    "line": 91,
+    "fields": [
+      "EV292",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "NaN"
+    ],
+    "expect": "INVALID_PRICE"
+  },
+  {
+    "line": 92,
+    "fields": [
+      "EV293",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "-nan"
+    ],
+    "expect": "INVALID_PRICE"
+  },
+  {
+    "line": 93,
+    "fields": [
+      "EV294",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "inf"
+    ],
+    "expect": "INVALID_PRICE"
+  },
+  {
+    "line": 94,
+    "fields": [
+      "EV295",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "-inf"
+    ],
+    "expect": "INVALID_PRICE"
+  },
+  {
+    "line": 95,
+    "fields": [
+      "EV296",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "Infinity"
+    ],
+    "expect": "INVALID_PRICE"
+  },
+  {
+    "line": 96,
+    "fields": [
+      "EV297",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "1e400"
+    ],
+    "expect": "INVALID_PRICE"
+  },
+  {
+    "line": 97,
+    "fields": [
+      "EV298",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "-1e400"
+    ],
+    "expect": "INVALID_PRICE"
+  },
+  {
+    "line": 98,
+    "fields": [
+      "EV299",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "0x10"
+    ],
+    "expect": "INVALID_PRICE"
+  },
+  {
+    "line": 99,
+    "fields": [
+      "EV300",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "$100"
+    ],
+    "expect": "INVALID_PRICE"
+  },
+  {
+    "line": 100,
+    "fields": [
+      "EV301",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "12.5.3"
+    ],
+    "expect": "INVALID_PRICE"
+  },
+  {
+    "line": 101,
+    "fields": [
+      "EV302",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "1,5"
+    ],
+    "expect": "INVALID_PRICE"
+  },
+  {
+    "line": 102,
+    "fields": [
+      "EV303",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "1 000"
+    ],
+    "expect": "INVALID_PRICE"
+  },
+  {
+    "line": 104,
+    "fields": [
+      "EV310",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "0"
+    ],
+    "expect": "NON_POSITIVE_PRICE"
+  },
+  {
+    "line": 105,
+    "fields": [
+      "EV311",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "0.00"
+    ],
+    "expect": "NON_POSITIVE_PRICE"
+  },
+  {
+    "line": 106,
+    "fields": [
+      "EV312",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "-0"
+    ],
+    "expect": "NON_POSITIVE_PRICE"
+  },
+  {
+    "line": 107,
+    "fields": [
+      "EV313",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "-0.0"
+    ],
+    "expect": "NON_POSITIVE_PRICE"
+  },
+  {
+    "line": 108,
+    "fields": [
+      "EV314",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "0e0"
+    ],
+    "expect": "NON_POSITIVE_PRICE"
+  },
+  {
+    "line": 109,
+    "fields": [
+      "EV315",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "-5"
+    ],
+    "expect": "NON_POSITIVE_PRICE"
+  },
+  {
+    "line": 110,
+    "fields": [
+      "EV316",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "-1e-9"
+    ],
+    "expect": "NON_POSITIVE_PRICE"
+  },
+  {
+    "line": 112,
+    "fields": [
+      "EV100",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:30",
+      "99"
+    ],
+    "expect": null
+  },
+  {
+    "line": 113,
+    "fields": [
+      "  EV100 ",
+      " RIX",
+      "HEL",
+      " 2026-01-10 08:00 ",
+      "2026-01-10 09:00",
+      "120"
+    ],
+    "expect": null
+  },
+  {
+    "line": 114,
+    "fields": [
+      "EV100",
+      "TLL",
+      "VNO",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "10"
+    ],
+    "expect": null
+  },
+  {
+    "line": 115,
+    "fields": [
+      "EV100",
+      "RIX",
+      "HEL",
+      "2026-01-10 08:00",
+      "2026-01-10 09:00",
+      "-1"
+    ],
+    "expect": "NON_POSITIVE_PRICE"
+  },
+  {
+    "line": 116,
+    "fields": [
+      "EV320",
+      "RIX",
+      "HEL",
+      "2026-02-01 08:00",
+      "2026-02-01 09:00",
+      "0"
+    ],
+    "expect": "NON_POSITIVE_PRICE"
+  },
+  {
+    "line": 117,
+    "fields": [
+      "EV320",
+      "RIX",
+      "HEL",
+      "2026-02-01 08:00",
+      "2026-02-01 09:00",
+      "80"
+    ],
+    "expect": null
+  },
+  {
+    "line": 118,
+    "fields": [
+      "EV320",
+      "RIX",
+      "HEL",
+      "2026-02-01 08:00",
+      "2026-02-01 09:00",
+      "90"
+    ],
+    "expect": null
+  },
+  {
+    "line": 120,
+    "fields": [
+      "EV330",
+      "BCN",
+      "CPH",
+      "2026-02-02 06:00",
+      "2026-02-02 09:10",
+      "149.90"
+    ],
+    "expect": null
+  }
+]

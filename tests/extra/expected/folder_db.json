@@ -1,0 +1,50 @@
+[
+  {
+    "flight_id": "F10A",
+    "origin": "RIX",
+    "destination": "HEL",
+    "departure_datetime": "2026-03-01 08:00",
+    "arrival_datetime": "2026-03-01 09:00",
+    "price": 100.0
+  },
+  {
+    "flight_id": "F10C",
+    "origin": "TLL",
+    "destination": "RIX",
+    "departure_datetime": "2026-03-01 12:00",
+    "arrival_datetime": "2026-03-01 12:50",
+    "price": 60.0
+  },
+  {
+    "flight_id": "F10B",
+    "origin": "RIX",
+    "destination": "HEL",
+    "departure_datetime": "2026-03-01 10:00",
+    "arrival_datetime": "2026-03-01 11:00",
+    "price": 70.0
+  },
+  {
+    "flight_id": "F2B",
+    "origin": "VNO",
+    "destination": "RIX",
+    "departure_datetime": "2026-03-02 10:00",
+    "arrival_datetime": "2026-03-02 11:00",
+    "price": 45.0
+  },
+  {
+    "flight_id": "F10A",
+    "origin": "RIX",
+    "destination": "HEL",
+    "departure_datetime": "2026-03-02 08:00",
+    "arrival_datetime": "2026-03-02 09:30",
+    "price": 95.0
+  },
+  {
+    "flight_id": "FL1",
+    "origin": "CPH",
+    "destination": "BCN",
+    "departure_datetime": "2026-03-03 07:00",
+    "arrival_datetime": "2026-03-03 10:00",
+    "price": 210.0
+  }
+]

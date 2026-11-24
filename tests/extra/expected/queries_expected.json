@@ -1,0 +1,520 @@
+[
+  {
+    "query": {
+      "price": 100
+    },
+    "expect": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "q8",
+      "Q9"
+    ]
+  },
+  {
+    "query": {
+      "min_price": 100
+    },
+    "expect": [
+      "Q1",
+      "Q3",
+      "Q5",
+      "Q6",
+      "Q7"
+    ]
+  },
+  {
+    "query": {
+      "min_price": 100,
+      "price": 100
+    },
+    "expect": [
+      "Q1",
+      "Q3",
+      "Q5"
+    ]
+  },
+  {
+    "query": {
+      "price": 39.99
+    },
+    "expect": [
+      "q8",
+      "Q9"
+    ]
+  },
+  {
+    "query": {
+      "price": 0
+    },
+    "expect": []
+  },
+  {
+    "query": {
+      "price": -5
+    },
+    "expect": []
+  },
+  {
+    "query": {
+      "min_price": 0.0
+    },
+    "expect": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "q8",
+      "Q9"
+    ]
+  },
+  {
+    "query": {
+      "departure_datetime": "2026-05-02 08:00"
+    },
+    "expect": [
+      "Q5",
+      "Q6",
+      "Q7",
+      "q8",
+      "Q9"
+    ]
+  },
+  {
+    "query": {
+      "arrival_datetime": "2026-05-01 09:00"
+    },
+    "expect": [
+      "Q1",
+      "Q2"
+    ]
+  },
+  {
+    "query": {
+      "departure_datetime": "2026-05-01 08:00",
+      "arrival_datetime": "2026-05-01 09:00"
+    },
+    "expect": [
+      "Q1",
+      "Q2"
+    ]
+  },
+  {
+    "query": {
+      "departure_datetime": "2026-05-04 00:00"
+    },
+    "expect": []
+  },
+  {
+    "query": {
+      "origin": "RIX",
+      "destination": "HEL"
+    },
+    "expect": [
+      "Q1",
+      "Q5"
+    ]
+  },
+  {
+    "query": {
+      "origin": "rix"
+    },
+    "expect": []
+  },
+  {
+    "query": {
+      "flight_id": "q8"
+    },
+    "expect": [
+      "q8"
+    ]
+  },
+  {
+    "query": {
+      "flight_id": "Q8"
+    },
+    "expect": []
+  },
+  {
+    "query": {
+      "origin": "RIX",
+      "min_price": 50,
+      "price": 90
+    },
+    "expect": [
+      "Q2"
+    ]
+  },
+  {
+    "query": {
+      "sort_by": "price"
+    },
+    "expect": [
+      "q8",
+      "Q9",
+      "Q4",
+      "Q2",
+      "Q1",
+      "Q3",
+      "Q5",
+      "Q6",
+      "Q7"
+    ]
+  },
+  {
+    "query": {
+      "sort_by": "price",
+      "order": "desc"
+    },
+    "expect": [
+      "Q6",
+      "Q7",
+      "Q1",
+      "Q3",
+      "Q5",
+      "Q2",
+      "Q4",
+      "q8",
+      "Q9"
+    ]
+  },
+  {
+    "query": {
+      "sort_by": "price",
+      "order": "asc"
+    },
+    "expect": [
+      "q8",
+      "Q9",
+      "Q4",
+      "Q2",
+      "Q1",
+      "Q3",
+      "Q5",
+      "Q6",
+      "Q7"
+    ]
+  },
+  {
+    "query": {
+      "sort_by": "flight_id"
+    },
+    "expect": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q9",
+      "q8"
+    ]
+  },
+  {
+    "query": {
+      "sort_by": "departure_datetime",
+      "order": "desc"
+    },
+    "expect": [
+      "Q7",
+      "Q9",
+      "q8",
+      "Q6",
+      "Q5",
+      "Q4",
+      "Q3",
+      "Q1",
+      "Q2"
+    ]
+  },
+  {
+    "query": {
+      "sort_by": "arrival_datetime",
+      "limit": 3
+    },
+    "expect": [
+      "Q2",
+      "Q1",
+      "Q3"
+    ]
+  },
+  {
+    "query": {
+      "sort_by": "destination",
+      "limit": 100
+    },
+    "expect": [
+      "Q1",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q3",
+      "Q4",
+      "Q9",
+      "Q2",
+      "q8"
+    ]
+  },
+  {
+    "query": {
+      "sort_by": "origin",
+      "order": "desc"
+    },
+    "expect": [
+      "Q9",
+      "Q4",
+      "Q1",
+      "Q2",
+      "Q5",
+      "q8",
+      "Q6",
+      "Q7",
+      "Q3"
+    ]
+  },
+  {
+    "query": {
+      "origin": "RIX",
+      "sort_by": "price",
+      "order": "desc",
+      "limit": 2
+    },
+    "expect": [
+      "Q1",
+      "Q5"
+    ]
+  },
+  {
+    "query": {
+      "min_price": 450.25,
+      "sort_by": "origin",
+      "order": "desc"
+    },
+    "expect": [
+      "Q6",
+      "Q7"
+    ]
+  },
+  {
+    "query": {
+      "limit": 0
+    },
+    "expect": []
+  },
+  {
+    "query": {
+      "limit": 2
+    },
+    "expect": [
+      "Q1",
+      "Q2"
+    ]
+  },
+  {
+    "query": {
+      "limit": 1000000
+    },
+    "expect": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "q8",
+      "Q9"
+    ]
+  },
+  {
+    "query": {},
+    "expect": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "q8",
+      "Q9"
+    ]
+  },
+  {
+    "query": {
+      "limit": true
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "limit": "2"
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "limit": null
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "limit": -1,
+      "sort_by": "price"
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "min_price": true
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "min_price": "100"
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "price": null
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "price": "abc"
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "price": false
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "flight_id": null
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "flight_id": 1
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "origin": [
+        "RIX"
+      ]
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "destination": {
+        "code": "HEL"
+      }
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "departure_datetime": "2026-05-01 8:00"
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "arrival_datetime": "2026-05-01T09:00"
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "departure_datetime": "2026-05-01"
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "departure_datetime": 202605011000
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "arrival_datetime": "2026-05-01 25:00"
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "sort_by": "min_price"
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "sort_by": "Price"
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "sort_by": null
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "sort_by": "price",
+      "order": "DESC"
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "sort_by": "price",
+      "order": "descending"
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "order": "asc"
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "Origin": "RIX"
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "origin": "RIX",
+      "colour": "red"
+    },
+    "expect": "INVALID_QUERY"
+  },
+  {
+    "query": {
+      "origin": "RIX",
+      "": 1
+    },
+    "expect": "INVALID_QUERY"
+  }
+]

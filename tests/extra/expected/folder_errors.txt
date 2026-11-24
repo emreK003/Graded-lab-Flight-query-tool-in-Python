@@ -1,0 +1,6 @@
+10_late.csv:3: NON_POSITIVE_PRICE
+2_early.csv:4: INVALID_PRICE
+A_upper.csv:2: DUPLICATE_FLIGHT
+A_upper.csv:4: INVALID_DESTINATION
+a_lower.csv:3: DUPLICATE_FLIGHT
+a_lower.csv:4: DUPLICATE_FLIGHT

@@ -1,0 +1,19 @@
+# Extra airport list for edge-case tests
+RIX
+  HEL  
+	OSL	
+TLL
+VNO
+
+ARN
+CPH
+LHR
+JFK
+IST
+BCN
+   
+# The codes below are in the list on purpose, but are not valid codes:
+abc
+XY
+ABCD
+ÅRN

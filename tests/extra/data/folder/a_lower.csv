@@ -1,0 +1,5 @@
+flight_id,origin,destination,departure_datetime,arrival_datetime,price
+#c
+F2B,VNO,RIX,2026-03-02 10:00,2026-03-02 11:00,45
+F10B,RIX,HEL,2026-03-01 10:00,2026-03-01 11:00,70
+FL1,CPH,BCN,2026-03-03 07:00,2026-03-03 10:00,210

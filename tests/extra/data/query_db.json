@@ -1,0 +1,74 @@
+[
+  {
+    "flight_id": "Q1",
+    "origin": "RIX",
+    "destination": "HEL",
+    "departure_datetime": "2026-05-01 08:00",
+    "arrival_datetime": "2026-05-01 09:00",
+    "price": 100
+  },
+  {
+    "flight_id": "Q2",
+    "origin": "RIX",
+    "destination": "TLL",
+    "departure_datetime": "2026-05-01 08:00",
+    "arrival_datetime": "2026-05-01 08:50",
+    "price": 80.5
+  },
+  {
+    "flight_id": "Q3",
+    "origin": "HEL",
+    "destination": "RIX",
+    "departure_datetime": "2026-05-01 12:00",
+    "arrival_datetime": "2026-05-01 13:00",
+    "price": 100.0
+  },
+  {
+    "flight_id": "Q4",
+    "origin": "TLL",
+    "destination": "RIX",
+    "departure_datetime": "2026-05-02 07:00",
+    "arrival_datetime": "2026-05-02 07:55",
+    "price": 60
+  },
+  {
+    "flight_id": "Q5",
+    "origin": "RIX",
+    "destination": "HEL",
+    "departure_datetime": "2026-05-02 08:00",
+    "arrival_datetime": "2026-05-02 09:00",
+    "price": 100
+  },
+  {
+    "flight_id": "Q6",
+    "origin": "LHR",
+    "destination": "JFK",
+    "departure_datetime": "2026-05-02 10:00",
+    "arrival_datetime": "2026-05-02 18:00",
+    "price": 450.25
+  },
+  {
+    "flight_id": "Q7",
+    "origin": "JFK",
+    "destination": "LHR",
+    "departure_datetime": "2026-05-03 20:00",
+    "arrival_datetime": "2026-05-04 08:00",
+    "price": 450.25
+  },
+  {
+    "flight_id": "q8",
+    "origin": "RIX",
+    "destination": "VNO",
+    "departure_datetime": "2026-05-03 06:00",
+    "arrival_datetime": "2026-05-03 07:00",
+    "price": 39.99
+  },
+  {
+    "flight_id": "Q9",
+    "origin": "VNO",
+    "destination": "RIX",
+    "departure_datetime": "2026-05-03 09:00",
+    "arrival_datetime": "2026-05-03 10:00",
+    "price": 39.99
+  }
+]

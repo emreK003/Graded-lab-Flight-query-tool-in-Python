@@ -1,0 +1,196 @@
+[
+  {
+    "price": 100
+  },
+  {
+    "min_price": 100
+  },
+  {
+    "min_price": 100,
+    "price": 100
+  },
+  {
+    "price": 39.99
+  },
+  {
+    "price": 0
+  },
+  {
+    "price": -5
+  },
+  {
+    "min_price": 0.0
+  },
+  {
+    "departure_datetime": "2026-05-02 08:00"
+  },
+  {
+    "arrival_datetime": "2026-05-01 09:00"
+  },
+  {
+    "departure_datetime": "2026-05-01 08:00",
+    "arrival_datetime": "2026-05-01 09:00"
+  },
+  {
+    "departure_datetime": "2026-05-04 00:00"
+  },
+  {
+    "origin": "RIX",
+    "destination": "HEL"
+  },
+  {
+    "origin": "rix"
+  },
+  {
+    "flight_id": "q8"
+  },
+  {
+    "flight_id": "Q8"
+  },
+  {
+    "origin": "RIX",
+    "min_price": 50,
+    "price": 90
+  },
+  {
+    "sort_by": "price"
+  },
+  {
+    "sort_by": "price",
+    "order": "desc"
+  },
+  {
+    "sort_by": "price",
+    "order": "asc"
+  },
+  {
+    "sort_by": "flight_id"
+  },
+  {
+    "sort_by": "departure_datetime",
+    "order": "desc"
+  },
+  {
+    "sort_by": "arrival_datetime",
+    "limit": 3
+  },
+  {
+    "sort_by": "destination",
+    "limit": 100
+  },
+  {
+    "sort_by": "origin",
+    "order": "desc"
+  },
+  {
+    "origin": "RIX",
+    "sort_by": "price",
+    "order": "desc",
+    "limit": 2
+  },
+  {
+    "min_price": 450.25,
+    "sort_by": "origin",
+    "order": "desc"
+  },
+  {
+    "limit": 0
+  },
+  {
+    "limit": 2
+  },
+  {
+    "limit": 1000000
+  },
+  {},
+  {
+    "limit": true
+  },
+  {
+    "limit": "2"
+  },
+  {
+    "limit": null
+  },
+  {
+    "limit": -1,
+    "sort_by": "price"
+  },
+  {
+    "min_price": true
+  },
+  {
+    "min_price": "100"
+  },
+  {
+    "price": null
+  },
+  {
+    "price": "abc"
+  },
+  {
+    "price": false
+  },
+  {
+    "flight_id": null
+  },
+  {
+    "flight_id": 1
+  },
+  {
+    "origin": [
+      "RIX"
+    ]
+  },
+  {
+    "destination": {
+      "code": "HEL"
+    }
+  },
+  {
+    "departure_datetime": "2026-05-01 8:00"
+  },
+  {
+    "arrival_datetime": "2026-05-01T09:00"
+  },
+  {
+    "departure_datetime": "2026-05-01"
+  },
+  {
+    "departure_datetime": 202605011000
+  },
+  {
+    "arrival_datetime": "2026-05-01 25:00"
+  },
+  {
+    "sort_by": "min_price"
+  },
+  {
+    "sort_by": "Price"
+  },
+  {
+    "sort_by": null
+  },
+  {
+    "sort_by": "price",
+    "order": "DESC"
+  },
+  {
+    "sort_by": "price",
+    "order": "descending"
+  },
+  {
+    "order": "asc"
+  },
+  {
+    "Origin": "RIX"
+  },
+  {
+    "origin": "RIX",
+    "colour": "red"
+  },
+  {
+    "origin": "RIX",
+    "": 1
+  }
+]

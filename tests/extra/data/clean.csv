@@ -1,0 +1,4 @@
+flight_id,origin,destination,departure_datetime,arrival_datetime,price
+CL1,RIX,HEL,2026-04-01 08:00,2026-04-01 09:00,70
+# only valid rows in this file
+CL2,HEL,RIX,2026-04-01 18:00,2026-04-01 19:00,75

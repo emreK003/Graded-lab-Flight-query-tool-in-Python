@@ -1,0 +1,2 @@
+flight_id,origin,destination,departure_datetime,arrival_datetime,price
+TRAP1,RIX,HEL,2026-09-09 09:00,2026-09-09 10:00,1
